@@ -249,3 +249,52 @@ header{
 .home h2 span{
     color:rgb(61, 187, 22)
 }
+
+.offers{
+    width:90%;
+    margin:40px auto;
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+}
+
+.offer-card{
+    flex:1;
+    height:170px;
+    background:linear-gradient(to right,#abd65b,#b7c79e);
+    border-radius:15px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:30px;
+    transition:.3s;
+    cursor:pointer;
+    gap:20px;
+}
+
+.offer-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+}
+
+.offer-text h4{
+    font-size:22px;
+    color:#2d6a2d;
+    margin-bottom:10px;
+}
+
+.offer-text p{
+    font-size:18px;
+    font-weight:600;
+    margin-bottom:18px;
+}
+
+.offer-text a{
+    color:#2e7d32;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.offer-card img{
+    width:140px;
+}
