@@ -4,8 +4,145 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart</title>
+<link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/97e855b908.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="images/favicon/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header>
+        <nav>
+            <div>
+                <img src="images/logo.png" alt="Fresh Basket Logo" width="170px" height="100px">
+                <div class="search-container">
+                    <input type="text" placeholder="Search for fruits, vegetables, groceries.">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <ul>
+                    <li><a href="login.html"><i class="fa-solid fa-arrow-right-to-bracket"></i>Login</a></li>
+                    <li><a href="cart.html"><i class="fa-solid fa-cart-plus"></i>Cart</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="menu">
+            <a href="home.html">Home</a>
+            <a href="Menu.html">Menu</a>
+            <a href="fruits.html">Fruits</a>
+            <a href="Vegetables.html">Vegetables</a>
+            <a href="dairy.html">Dairy & Eggs</a>
+            <a href="Snacks.html">Snacks </a>
+            <a href="Beverages.html">Beverages</a>
+            <a href="Bakery.html">Bakery</a>
+            <a href="meat_&_seafood.html">Meat & Seafood</a>
+            <a href="Organic.html">Organic</a>
+            <a href="Others.html">Others</a>
+         </div>
+    </header>
+
+    <section class="cart-section">
+
+        <div class="cart-header">
+            <h2>Your Cart <span>(4 Items)</span></h2>
+            <p>Remove All</p>
+        </div>
+
+    <!-- Product 1 -->
+        <div class="cart-item">
+
+            <div class="product-info">
+            <img src="images/icon/tomato.png" alt="Tomato">
+
+            <div class="details">
+                <h3>Tomato</h3>
+                <p>1 Kg</p>
+                <span>₹25.00</span>
+            </div>
+        </div>
+
+            <div class="quantity">
+                <button>-</button>
+                <input type="text" value="1" readonly>
+                <button>+</button>
+            </div>
+
+            <div class="price">₹25.00</div>
+
+            <div class="delete">
+                <i class="fa-solid fa-trash"></i>
+            </div>
+
+        </div>
+
+    <!-- Product 2 -->
+    <div class="cart-item">
+
+        <div class="product-info">
+            <img src="images/icon/patato" alt="Potato">
+
+            <div class="details">
+                <h3>Potato</h3>
+                <p>1 Kg</p>
+                <span>₹20.00</span>
+            </div>
+        </div>
+
+        <div class="quantity">
+            <button>-</button>
+            <input type="text" value="1" readonly>
+            <button>+</button>
+        </div>
+
+        <div class="price">₹20.00</div>
+
+        <div class="delete">
+            <i class="fa-solid fa-trash"></i>
+        </div>
+
+    </div>
+
+    <!-- Product 3 -->
+    <div class="cart-item">
+
+        <div class="product-info">
+            <img src="images/icon/banana.png" alt="Banana">
+
+            <div class="details">
+                <h3>Banana</h3>
+                <p>1 Dozen</p>
+                <span>₹30.00</span>
+            </div>
+        </div>
+
+        <div class="quantity">
+            <button>-</button>
+            <input type="text" value="1" readonly>
+            <button>+</button>
+        </div>
+
+        <div class="price">₹30.00</div>
+
+        <div class="delete">
+            <i class="fa-solid fa-trash"></i>
+        </div>
+    </div>
+
+    <div class="cart-container">
+    <div class="cart-summary">
+        <h2>Cart Summary</h2>
+        <p>Subtotal <span>₹75.00</span></p>
+        <p>Delivery Charges <span>₹10.00</span></p>
+        <hr>
+        <h3>Total <span>₹85.00</span></h3>
+
+        <button>Proceed to Checkout</button>
+    </div>
+</div>
+</section>
+
+
+
     <h2>Cart page</h2>
 </body>
 </html>
