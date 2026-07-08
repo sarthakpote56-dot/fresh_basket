@@ -138,7 +138,7 @@ li a{
     font-size: 16px;
     margin-right: 10px;
     margin-top: 20px;
-    margin-left: 200px;
+    margin-left: 10px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
@@ -227,12 +227,11 @@ header{
 .product-box button{
     border: none;
     padding: 5px 12px;
-    border-radius: 5px;
-    color: rgb(52, 124, 30);
+    border-radius: 10px;
+    color: rgb(241, 243, 240);
     margin-top: 10px;
     cursor: pointer;
     margin-left: 5px;
-    border: 1px solid green;
 }
 
 .product-box button:hover{
@@ -409,9 +408,10 @@ header{
 
 .cart-container {
     display: flex;
-    justify-content: flex-end;   /* Moves the cart to the right */
+    justify-content: flex-end;
     align-items: flex-start;
-    padding: 40px;
+    flex: 0 0 320px;
+    padding: 0px;
 }
 
 .cart-summary {
@@ -571,4 +571,63 @@ button{
     color:#666;
     line-height:28px;
     margin-bottom:20px;
+}
+
+.auth-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #a2e262de, #ffffff);
+}
+
+.auth-box{
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0px 8px 25px rgb(11, 87, 2);
+}
+
+.auth-box h2{
+    margin-bottom:20px ;
+}
+
+.auth-box input{
+    width: 100%;
+    outline: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0px ;
+    border: 1px solid #ddd;
+}
+
+.auth-box input:focus{
+    border-color: red;
+}
+
+.auth-box button{
+    background: rgb(124, 221, 34);
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.auth-box button:hover{
+    background-color: rgb(39, 139, 0);
+}
+
+.auth-box p{
+    font-size: 15px;
+    margin-top: 10px ;
+}
+
+.auth-box a{
+    color: rgb(122, 201, 48);
+    text-decoration: none;
 }
